@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Be the Bookie</title>
+      <!-- Bootstrap core CSS -->
+      <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom fonts for this template -->
+      <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,500,500i,600,600i,700,700i,800" rel="stylesheet">
+      <!-- Plugin CSS -->
+      <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="css/creative.css" rel="stylesheet">
+
+        <!-- Select2 -->
+  <link rel="stylesheet" href="plugins/select2/dist/css/select2.min.css">
+   </head>
+   <body id="page-top">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+         <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img class="img-responsive" src="img/logo.png" width="100"></a>
+            <a class="  navbar-toggler-right"   data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+               <div id="nav-icon1">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto list-inline">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">Roadmap</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">WhitePapaer</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">Team</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#">Contact</a>
+                  </li>
+               </ul>
+               <ul class="navbar-nav  list-inline login pull-right">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="" data-toggle="modal" data-target="#myModal"  >Login/Register <i class="fa fa-user login_icon"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section class="dashboard">
+         <div class="container">
+            <div class="row">
+               <div class="ragistration" >
+                  <div class=" ml-auto">
+                     <!-- Modal content-->
+                     <div class="modal-content card">
+                        <div class="modal-header">
+                           <h5 class="modal-title">Registration</h5>
+                           <a href="" class="close" data-dismiss="modal">&times;</a>
+                        </div>
+                        <div class="modal-body">
+                           <div class="form-group">
+                              <input type="text" class="form-control" id="mail" placeholder="E-mail">
+                           </div>
+                           <div class="form-group">
+                              <input type="password" class="form-control" id="pwd" placeholder="Password">
+                              <i class="fa fa-eye" aria-hidden="true"></i>
+                           </div>
+                           <div class="form-group">
+                               <div class="form-group">
+                                   
+                                  <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">Country 01</option>
+                                    <option>Country 01</option>
+                                    <option>Country 01</option>
+                                    <option>Country 04</option>
+                                    <option>Country 01</option>
+                                    <option>Country 01</option>
+                                    <option>Country 05</option>
+                                  </select>
+                                </div>
+                           </div>
+                           <div class="col-sm-10 ml-auto margin_15">
+                               <input type="radio" id="radio1" name="radios" value="all" checked>
+                                 <label for="radio1">Individual</label><span style="padding: 0 20px;">Or</span>
+                                <input type="radio" id="radio2" name="radios"value="false">
+                                 <label for="radio2">Legal Entirity</label>
+                           </div>
+                           <div class="clearfix"></div>
+                           <div class="col-sm-10 ml-auto text-center checkbox_agreee">
+                            
+                            <label class="container01"> 
+                              <input type="checkbox">
+                              I agree with Terms of Use                             
+                              <span class="checkmark"></span>
+                            </label>
+                           </div>
+                         
+                        </div>
+                        <div class="modal-footer ragistration_btn">
+                           <a href="#" class="btn btn-default" >Regiter</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Bootstrap core JavaScript -->
+      <script src="plugins/jquery/jquery.min.js"></script>
+      <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="plugins/jquery-easing/jquery.easing.min.js"></script>
+      <script src="plugins/scrollreveal/scrollreveal.min.js"></script>
+      <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <!-- Custom scripts for this template -->
+      <script src="js/creative.min.js"></script>
+      <script src="js/jquery.plugin.min.js"></script>
+      <script src="js/jquery.countdown.js"></script>
+
+      <!-- Select2 -->
+<script src="plugins/select2/dist/js/select2.full.min.js"></script>
+      <script>
+         $(function () {
+           var austDay = new Date();
+           austDay = new Date(austDay.getFullYear() + 1, 1-12, 0);
+           $('#defaultCountdown').countdown({until: austDay});
+           $('#year').text(austDay.getFullYear());
+         });
+         
+         
+         $(document).ready(function(){
+           $('#nav-icon1').click(function(){
+             $(this).toggleClass('open');
+           });
+         });
+         
+      </script>
+   </body>
+</html>
